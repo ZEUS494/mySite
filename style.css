@@ -1,0 +1,248 @@
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container, .menu, .info, .company, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Превью сайта */
+.preview {
+    background: linear-gradient(135deg, #1e1e2f, #2c2c4a);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #333;
+}
+
+/* Меню */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #1e1e1e;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+.menu a {
+    color: #ccc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+/* Информационный блок */
+.info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.info h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.info p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #bbb;
+}
+
+/* Карточки товаров */
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width: calc(33% - 20px);
+    transition: transform 0.3s ease;
+    border: 1px solid #333;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.image {
+    height: 200px;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+}
+
+.infoCard {
+    padding: 15px;
+}
+
+.infoCard h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.infoCard p {
+    color: #aaa;
+}
+
+/* Блок компании */
+.company {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.map iframe {
+    border-radius: 10px;
+    height: 300px;
+}
+
+.edge {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #00ffcc;
+    transition: background-color 0.3s;
+}
+
+.edge:hover {
+    background-color: #2b2b2b;
+}
+
+.imageEdge {
+    width: 50px;
+    height: 50px;
+    background-color: #00ffcc;
+    border-radius: 50%;
+}
+
+.edge h1 {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Подвал */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
+
+.list {
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+#footerListA1,
+#footerListA2,
+#footerListA3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.line {
+    height: 2px;
+    width: 50px;
+    background-color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+.list ul li a {
+    display: block;
+    margin-bottom: 8px;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.list ul li a:hover {
+    color: #ffffff;
+}
+
+.url {
+    display: flex;
+    gap: 10px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.circle:hover {
+    background-color: #00ffcc;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}

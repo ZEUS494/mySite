@@ -1,0 +1,238 @@
+body{
+    margin: 0; /*внешние отступы*/
+    padding: 0; /*внутренние оступы*/
+    width: 90vw;
+    height: 1000px;
+}
+/* Стилизация превью */
+.preview{
+    width: 100vw; /*видимая ширина*/
+    height: 500px;/*Высота*/
+    display: flex;/*метод позицирования гибкий*/
+    align-items: center;/*выравнивание элемента*/
+    justify-content: center;/*выравнивание контента*/
+    background-image: url(images/1678271029_happyhouse-guru-p-temno-sinii-fon-oboi-dizain-2.jpg);/*Фоновое изображение*/
+    background-repeat: no-repeat;/*Повторение фона*/
+    background-position: bottom;
+    background-size: cover;/*размер фона*/
+    background-attachment: fixed;/*привязка фона*/
+}
+/* Стилизация заголовка превью */
+.preview h1{
+    font-size: 70px; /*Размер шрифта*/
+    color: rgb(86, 84, 185);/*цвет текста*/
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+/* стилизация меню */
+.menu{
+    width: 100vw;
+    height: 70px;
+    background-color:#133AAC;
+    display: flex;
+    align-items: center;
+}
+/*стилизация ссылки под кнопку*/
+.menu a{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    width: 140px;
+    height: 50px;
+    background-color: rgb(145, 144, 148);
+    margin-left: 200px;/*внешний отступ слева*/
+    border-radius: 10px; /*Скругление углов*/
+    border: 10px solid rgb(74, 67, 200);/*граница*/
+    text-decoration: none;/*декорация текста*/
+    color: rgb(62, 66, 160);
+}
+.company{
+    width: 100vw;
+    height: 630px;
+    background-color:#081272;
+    display: flex;
+}
+.column1{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.column2{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.map{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: end;
+}
+.column .row{
+    width: 100%;
+    height: 50%;
+}
+.info{
+    width: 80%;
+    height: 70%;
+    border: 5px solid darkblue;
+}
+.info h2{
+    font-size: 40px;
+    color:#133AAC;
+    margin-left: 20px;/*внешний отступ слева*/
+    border-radius: 10px; /*Скругление углов*/
+    border: 5px solid rgb(74, 67, 200);/*граница*/
+}
+.company h1{
+    color: rgb(86, 84, 185);/*цвет текста*/
+    display: flex;/*метод позицирования гибкий*/
+    align-items: start;/*выравнивание элемента*/
+    justify-content: center;/*выравнивание контента*/
+}
+.container{
+    width: 100vw;
+    height: 600px;
+    background-color:#274E7D;
+    display: flex;
+    flex-direction: row;
+}
+.cardd{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.row1{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.row2{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+/* стилизация карточек товаров */
+.card{
+    width: 260px;
+    height: 160px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-left: 20px;
+    transition: 600ms;/*переход*/
+    overflow: hidden;/*переполнение*/
+}
+/*изменение свойств при наведении на карточку товара*/
+.card:hover{
+    cursor: pointer;/*изменение курсора*/
+    transform: scale(1.1);
+}
+.infoCard{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;/*внутренний оступ слева*/
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 40px; /*Размер шрифта*/
+    color: rgb(86, 84, 185);/*цвет текста*/
+}
+footer{
+    width: 100vw;
+    height: 400px;
+    background-color:#476BD6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list{
+    width: 20%;
+    height: 80%;
+    padding: 20px;
+}
+#footerListA1{
+    text-decoration: none;
+    color: rgb(26, 32, 93);
+    font-size: 40px;
+}
+.line{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(85, 94, 141);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+li{
+    margin-bottom: 10px;
+}
+.list a{
+    text-decoration: none;
+    color: rgb(33, 41, 52);
+    font-size: 20px;
+}
+.list a:hover{
+    color: rgb(6, 6, 216);
+}
+#footerListA2{
+    text-decoration: none;
+    color: rgb(18, 14, 74);
+    font-size: 40px;
+}
+#footerListA3{
+    text-decoration: none;
+    color: rgb(22, 16, 82);
+    font-size: 40px;
+}
+.url{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    transition: 500ms;
+}
+.circle:hover{
+     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.541);
+     transform: scale(1.1);
+}
+#cir1{
+    background-image: url(images/images\ \(1\).png);
+     background-repeat: no-repeat;/*Повторение фона*/
+    background-position: bottom;
+    background-size: cover;/*размер фона*/
+}
+#cir2{
+    background-image: url(images/apps.8453.13655054093851568.4a371b72-2ce8-4bdb-9d83-be49894d3fa0.png);
+     background-repeat: no-repeat;/*Повторение фона*/
+    background-position: bottom;
+    background-size: cover;/*размер фона*/
+}
+#cir3{
+    background-image: url(images/images.png);
+     background-repeat: no-repeat;/*Повторение фона*/
+    background-position: bottom;
+    background-size: cover;/*размер фона*/
+}

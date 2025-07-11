@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+    <!-- Превью сайта -->
+    <div class="preview">
+        <h1>Отзывы наших клиентов</h1>
+    </div>
+    <!-- меню сайта -->
+    <div class="menu">
+        <a href="#">Главная страница</a> <!--Ссылка-->
+        <a href="calalog.html">Католог</a>
+        <a href="aboutus.html">О нас</a> 
+        <a href="#">Отзывы</a>
+    </div>
+    <!-- Отзывы клиентов -->
+    <div class="reviews" id="rs">
+        <div class="review">
+            <div class="row">
+                <div class="col">
+                    <div class="reviewImage"></div>
+                </div>
+                <div class="col">
+                    <h1>Имя</h1>
+                </div>
+            </div>
+            <div class="row">
+                <p>Отзыв</p>
+            </div>
+        </div>
+        <div class="review"></div>
+        <div class="review"></div>
+        <div class="review"></div>
+        <div class="review"></div>
+    </div>
+    <!-- Форма обратной связи -->
+    <div class="forms">
+        <div class="container">
+            <h1>Отзыв</h1>
+            <form action="">
+                <label for="name">Имя:</label>
+                <input type="text" placeholder="Введите ваше имя" id="name">
+                <br>
+                <label for="email">Почта:</label>
+                <input type="email" placeholder="Введите вашу почту" id="email">
+                <br>
+                <label for="tel">Номер телефона:</label>
+                <input type="tel" placeholder="Введите ваш номер телефона" id="tel">
+                <br>
+                <label for="message">Введите текст:</label>
+                <textarea name="message" placeholder="Введите ваш отзыв" id="message"></textarea>
+                <br>
+                <button type="button" id="btn">Отправить отзыв</button>
+            </form>
+        </div>
+    </div>
+    <script src="reviews.js"></script>
+</body>
+</html>

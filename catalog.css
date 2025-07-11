@@ -1,0 +1,335 @@
+body{
+    margin: 0; /*внешние отступы*/
+    padding: 0; /*внутренние оступы*/
+    width: 90vw;
+    height: 3400px;
+}
+/* Стилизация превью */
+.preview{
+    width: 100vw; /*видимая ширина*/
+    height: 500px;/*Высота*/
+    display: flex;/*метод позицирования гибкий*/
+    align-items: center;/*выравнивание элемента*/
+    justify-content: center;/*выравнивание контента*/
+    background-image: url(images/ce3b4927016ea0bd600f5fce1a98c59f-840-80.jpg);/*Фоновое изображение*/
+    background-repeat: no-repeat;/*Повторение фона*/
+    background-position: bottom;
+    background-size: cover;/*размер фона*/
+    background-attachment: fixed;/*привязка фона*/
+}
+/* Стилизация заголовка превью */
+.preview h1{
+    font-size: 70px; /*Размер шрифта*/
+    color: rgb(86, 84, 185);/*цвет текста*/
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+/* стилизация меню */
+.menu{
+    width: 100vw;
+    height: 70px;
+    background-color:#133AAC;
+    display: flex;
+    align-items: center;
+}
+/*стилизация ссылки под кнопку*/
+.menu a{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    width: 140px;
+    height: 50px;
+    background-color: rgb(145, 144, 148);
+    margin-left: 200px;/*внешний отступ слева*/
+    border-radius: 10px; /*Скругление углов*/
+    border: 10px solid rgb(74, 67, 200);/*граница*/
+    text-decoration: none;/*декорация текста*/
+    color: rgb(62, 66, 160);
+}
+.container{
+    width: 100vw;
+    height: 600px;
+    background-color:#274E7D;
+    display: flex;
+    flex-direction: column;
+}
+.container1{
+    width: 100vw;
+    height: 2400px;
+    background-color:#517aac;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* стилизация карточек товаров */
+.card{
+    width: 260px;
+    height: 360px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: 600ms;/*переход*/
+    overflow: hidden;/*переполнение*/
+}
+/*изменение свойств при наведении на карточку товара*/
+.card:hover{
+    cursor: pointer;/*изменение курсора*/
+    transform: scale(1.1);
+}
+/* общий размер для изображений внутри карточек */
+.image{
+    width: 100%;
+    height: 70%;
+    border: 1px solid black;
+}
+.infoCard{
+    width: 100%;
+    height: 30%;
+    padding-left: 20px;/*внутренний оступ слева*/
+}
+.container h1{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    color: #192d69;
+    font-size: 50px;
+}
+.container1 h1{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    color: #192d69;
+    font-size: 50px;
+}
+#i1{
+    background-image: url(images/orig.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#i2{
+    background-image: url(images/orig\ \(1\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#i3{
+    background-image: url(images/orig\ \(2\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#i4{
+    background-image: url(images/orig\ \(3\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia1{
+    background-image: url(images/100063264285b3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia2{
+    background-image: url(images/computer-3144323_1920.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia3{
+    background-image: url(images/56-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia4{
+    background-image: url(images/good_img_2ccb5508-7785-11e7-80eb-005056842056_600.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia5{
+    background-image: url(images/orig6.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia6{
+    background-image: url(images/6299907119.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia7{
+    background-image: url(images/6380906956.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia8{
+    background-image: url(images/6142728014.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia9{
+    background-image: url(images/6y8s3wd0h4zydja1sc283cnlzxw6lirv.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia10{
+    background-image: url(images/orig\ \(5\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia11{
+    background-image: url(images/orig\ \(4\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia12{
+    background-image: url(images/orig.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia13{
+    background-image: url(images/orig\ \(8\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia14{
+    background-image: url(images/orig\ \(2\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia15{
+    background-image: url(images/9877b912efb0e5f179c3c94214e7a731.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia16{
+    background-image: url(images/600001722354b0.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia17{
+    background-image: url(images/orig\ \(3\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia18{
+    background-image: url(images/orig\ \(1\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia19{
+    background-image: url(images/orig\ \(7\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ia20{
+    background-image: url(images/6258f03ba01fe472653a705c-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    width: 100vw;
+    height: 400px;
+    background-color:#476BD6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list{
+    width: 20%;
+    height: 80%;
+    padding: 20px;
+}
+#footerListA1{
+    text-decoration: none;
+    color: rgb(26, 32, 93);
+    font-size: 40px;
+}
+.line{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(85, 94, 141);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+li{
+    margin-bottom: 10px;
+}
+.list a{
+    text-decoration: none;
+    color: rgb(33, 41, 52);
+    font-size: 20px;
+}
+.list a:hover{
+    color: rgb(6, 6, 216);
+}
+#footerListA2{
+    text-decoration: none;
+    color: rgb(18, 14, 74);
+    font-size: 40px;
+}
+#footerListA3{
+    text-decoration: none;
+    color: rgb(22, 16, 82);
+    font-size: 40px;
+}
+.url{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    transition: 500ms;
+}
+.circle:hover{
+     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.541);
+     transform: scale(1.1);
+}
+#cir1{
+    background-image: url(images/images\ \(1\).png);
+     background-repeat: no-repeat;/*Повторение фона*/
+    background-position: bottom;
+    background-size: cover;/*размер фона*/
+}
+#cir2{
+    background-image: url(images/apps.8453.13655054093851568.4a371b72-2ce8-4bdb-9d83-be49894d3fa0.png);
+     background-repeat: no-repeat;/*Повторение фона*/
+    background-position: bottom;
+    background-size: cover;/*размер фона*/
+}
+#cir3{
+    background-image: url(images/images.png);
+     background-repeat: no-repeat;/*Повторение фона*/
+    background-position: bottom;
+    background-size: cover;/*размер фона*/
+}

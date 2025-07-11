@@ -1,0 +1,166 @@
+/* Селектор */
+body{
+    margin: 0; /*внешние отступы*/
+    padding: 0; /*внутренние оступы*/
+    width: 90vw;
+    height: 3400px;
+}
+/* Стилизация превью */
+.preview{
+    width: 100vw; /*видимая ширина*/
+    height: 500px;/*Высота*/
+    display: flex;/*метод позицирования гибкий*/
+    align-items: center;/*выравнивание элемента*/
+    justify-content: center;/*выравнивание контента*/
+    background-image: url(images/electronic_board_lines_glow_1008022_3840x2400.jpg);/*Фоновое изображение*/
+    background-repeat: no-repeat;/*Повторение фона*/
+    background-position: bottom;
+    background-size: cover;/*размер фона*/
+    background-attachment: fixed;/*привязка фона*/
+}
+/* Стилизация заголовка превью */
+.preview h1{
+    font-size: 70px; /*Размер шрифта*/
+    color: rgb(0, 0, 0);/*цвет текста*/
+
+}
+/* стилизация меню */
+.menu{
+    width: 100vw;
+    height: 70px;
+    background-color:#133AAC;
+    display: flex;
+    align-items: center;
+}
+/*стилизация ссылки под кнопку*/
+.menu a{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    width: 140px;
+    height: 50px;
+    background-color: rgb(145, 144, 148);
+    margin-left: 200px;/*внешний отступ слева*/
+    border-radius: 10px; /*Скругление углов*/
+    border: 10px solid rgb(74, 67, 200);/*граница*/
+    text-decoration: none;/*декорация текста*/
+    color: rgb(62, 66, 160);
+}
+.reviews{
+    width: 100vw;
+    height: 400px;
+    background-color: coral;
+    display: flex;
+    gap: 30px; /*Отступы между элементами*/
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.reviews::-webkit-scrollbar{ /*Сокрытие полосы прокрутки для Chrome и Safari*/
+    display: none;
+}
+.review{
+    width: 600px;
+    height: 90%;
+    outline: auto;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.forms{
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+.container{
+    width: 60%;
+    height: 86%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px rgb(75, 75, 75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    font-size: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+label:nth-child(1){
+    margin-top: 10px;
+}
+input{
+    width: 60%;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+textarea{
+    margin-top: 10px;
+    width: 58%;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    resize: none;
+}
+form button{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    cursor: pointer;
+}
+form button:hover{
+    animation: rotate 0.5s linear;
+}
+@keyframes rotate{
+    0%{
+        transform: rotateZ(0deg); /*deg - градусы*/
+    }
+    25%{
+        transform: rotateZ(5deg); /*deg - градусы*/
+    }
+    50%{
+        transform: rotateZ(0deg); /*deg - градусы*/
+    }
+    75%{
+        transform: rotateZ(-5deg); /*deg - градусы*/
+    }
+    100%{
+        transform: rotateZ(0deg); /*deg - градусы*/
+    }
+}
+.row{
+    width: 100%;
+    height: 50%;
+    outline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col{
+    width: 50%;
+    height: 100%;
+    outline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviewImage{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    outline: auto;
+}
